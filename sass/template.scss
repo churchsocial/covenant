@@ -1,0 +1,772 @@
+::-moz-selection
+{
+	background: #bc652e;
+	color: white;
+	text-shadow: none;
+}
+
+::selection
+{
+	background: #bc652e;
+	color: white;
+	text-shadow: none;
+}
+
+html
+{
+	background: #2a1f19 url('../img/thatch_texture.jpg');
+	font-family: Arial;
+}
+
+#info
+{
+	overflow: hidden;
+	position: relative;
+
+	.church_address,
+	.sunday_services
+	{
+		color: white;
+		text-shadow: black 1px 1px 0;
+		font-size: 16px;
+		line-height: 100%;
+
+		strong
+		{
+			color: #89776C;
+			font-size: 14px;
+			text-transform: uppercase;
+		}
+	}
+
+	a
+	{
+		background: #837166 url(../img/btn_bg.png) bottom repeat-x;
+		border-color: #281910;
+		border-radius: 3px;
+		border-style: solid;
+		border-width: 1px;
+		color: white;
+		display: block;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 100%;
+		padding: 10px 20px;
+		text-shadow: #403128 1px 1px 0;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover
+		{
+			background: #8d7a6e;
+		}
+	}
+}
+
+#logo
+{
+	display: block;
+
+	img
+	{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	#menu
+	{
+		border-bottom: #352a25 solid 1px;
+		border-top: #1a1410 solid 1px;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		> li
+		{
+			border-bottom: #1a1410 solid 1px;
+			border-top: #352a25 solid 1px;
+			padding: 15px 0;
+
+			&.selected
+			{
+				> a
+				{
+					text-decoration: underline;
+				}
+			}
+
+			> a
+			{
+				color: #d0c1b8;
+				font-family: 'Din Condensed Medium', 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
+				font-size: 25px;
+				font-weight: normal;
+				line-height: 125%;
+				text-decoration: none;
+
+				&:hover
+				{
+					text-decoration: underline;
+				}
+			}
+		}
+
+		li
+		{
+			ul
+			{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li
+				{
+					font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+					font-size: 14px;
+					line-height: 145%;
+
+					&.selected
+					{
+						a
+						{
+							color: #bc652e;
+						}
+					}
+
+					a
+					{
+						color: #89776c;
+						text-decoration: none;
+
+						&:hover
+						{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#content
+{
+	overflow: hidden;
+	background: #382b23 url('../img/brown_noise_texture.png');
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px hsla(0, 1%, 0%, 0.2);
+	color: #a2958c;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+	font-size: 16px;
+	line-height: 135%;
+
+	.banner
+	{
+		width: 100%;
+		margin-bottom: -15px;
+		overflow: hidden;
+		box-sizing: border-box;
+
+		img
+		{
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 3px 3px 0 0;
+		}
+
+		@media only screen and (max-width: 549px)
+		{
+			img
+			{
+				border-radius: 0;
+			}
+		}
+	}
+}
+
+#copyright
+{
+	clear: both;
+
+	p
+	{
+		color: #89776c;
+		font-family: 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
+		font-size: 12px;
+		line-height: 120%;
+		margin: 0;
+		text-shadow: black 1px 1px 0;
+
+		a
+		{
+			color: #d0c1b8;
+			display: inline-block;
+			text-decoration: none;
+
+			&:hover
+			{
+				border-bottom: white dotted 1px;
+				color: white;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 549px)
+{
+	body
+	{
+		margin: 0;
+	}
+
+	#container
+	{
+		width: 100%;
+	}
+
+	#info
+	{
+
+		padding: 0 10px;
+		overflow: hidden;
+
+		a.menu,
+		a.login
+		{
+			float: left;
+			width: 50%;
+			margin: 10px 0 20px 0;
+			padding: 10px 0;
+			font-size: 13px;
+			line-height: 100%;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		.church_address,
+		.sunday_services
+		{
+			clear: both;
+			float: none;
+			margin: 0 0 10px 0;
+			text-align: center;
+
+			strong
+			{
+				display: block;
+			}
+		}
+	}
+
+	#logo
+	{
+		margin: 15px auto;
+		width: 90%;
+	}
+
+	#menu
+	{
+		display: none;
+		position: absolute;
+		z-index: 200;
+		left: 0px;
+		top: 0px;
+		margin: 0;
+		padding: 15px 0 25px 0;
+		width: 100%;
+		min-height: 100%;
+		list-style: none;
+		background: #54453c;
+
+		&.show
+		{
+			display: block;
+		}
+
+		li
+		{
+			padding: 0 15px 15px 15px;
+
+			a
+			{
+				display: block;
+				margin: 0 0 5px 0;
+				padding: 15px 20px;
+				background: #837166 url(../img/btn_bg.png) bottom repeat-x;
+				border-color: #281910;
+				border-radius: 3px;
+				border-style: solid;
+				border-width: 1px;
+				color: white;
+				font-size: 15px;
+				text-transform: uppercase;
+				font-weight: bold;
+				line-height: 100%;
+				text-shadow: #403128 1px 1px 0;
+				text-decoration: none;
+				text-align: center;
+
+				&:hover
+				{
+					text-decoration: underline;
+				}
+			}
+
+			ul
+			{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li
+				{
+					padding: 0;
+
+					a
+					{
+						padding: 8px 20px;
+						color: #e9dbd1;
+						font-size: 12px;
+						text-transform: none;
+					}
+				}
+			}
+		}
+	}
+
+	#content
+	{
+		background: none;
+		border-radius: none;
+		box-shadow: none;
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+
+	#copyright
+	{
+		background: #382b23 url('../img/brown_noise_texture.png');
+		padding: 15px 0 20px 0;
+
+		p
+		{
+			text-align: center;
+
+			&.church
+			{
+				margin: 0 0 10px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 550px)
+{
+	#info
+	{
+		a.menu
+		{
+			display: none;
+		}
+	}
+
+	#menu
+	{
+		height: auto !important;
+	}
+}
+
+@media only screen and (min-width: 550px) and (max-width: 767px)
+{
+	body
+	{
+		margin: 20px 10px 30px 10px;
+	}
+
+	#container
+	{
+		margin: 0 auto;
+		position: relative;
+		width: 530px;
+	}
+
+	#info
+	{
+		position: absolute;
+		right: 0;
+		text-align: right;
+		top: 0;
+		width: 250px;
+
+		.church_address,
+		.sunday_services
+		{
+			float: none;
+			font-size: 12px;
+			line-height: 110%;
+			margin: 10px 0 0 0;
+
+			strong
+			{
+				display: block;
+				font-size: 11px;
+			}
+		}
+
+		a
+		{
+			display: inline-block;
+			font-size: 11px;
+			padding: 8px 20px;
+		}
+	}
+
+	#logo
+	{
+		width: 230px;
+	}
+
+	#menu
+	{
+		list-style: none;
+		margin: 25px 0 0 0;
+		padding: 0;
+
+		> li
+		{
+			display: inline-block;
+			margin: 0 5px 5px 0;
+
+			> a
+			{
+				color: white;
+				display: block;
+				font-size: 14px;
+				padding: 3px 8px;
+				text-decoration: none;
+			}
+
+			ul
+			{
+				display: none;
+			}
+
+			&.selected
+			{
+				a
+				{
+					text-decoration: underline;
+				}
+			}
+
+			&:hover
+			{
+				a
+				{
+					background: #837167;
+					text-decoration: none;
+				}
+
+				ul
+				{
+					background: #837167;
+					display: block;
+					list-style: none;
+					margin: 0;
+					padding: 10px;
+					position: absolute;
+
+					li
+					{
+						&.selected
+						{
+							a
+							{
+								color: #2a1f19;
+							}
+						}
+
+						a
+						{
+							color: white;
+							font-size: 12px;
+							text-decoration: none;
+
+							&:hover
+							{
+								color: #2a1f19;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#content
+	{
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+
+	#copyright
+	{
+		padding: 15px 0 0 0;
+
+		p
+		{
+			text-align: center;
+
+			&.church
+			{
+				margin: 0 0 10px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px)
+{
+	body
+	{
+		margin: 0 9px 30px 9px;
+	}
+
+	#container
+	{
+		margin: 0 auto;
+		width: 750px;
+	}
+
+	#info
+	{
+		padding: 35px 0 10px 180px;
+
+		.church_address,
+		.sunday_services
+		{
+			float: none;
+			font-size: 14px;
+
+			strong
+			{
+				display: inline-block;
+				font-size: 12px;
+				width: 125px;
+			}
+
+			&.sunday_services
+			{
+				padding: 0;
+			}
+		}
+
+		a
+		{
+			bottom: 10px;
+			font-size: 11px;
+			padding: 10px 15px;
+			position: absolute;
+			right: 0px;
+		}
+	}
+
+	#header
+	{
+		float: left;
+		width: 180px;
+	}
+
+	#logo
+	{
+		margin: 0 0 15px 0;
+		width: 175px;
+	}
+
+	#menu
+	{
+		> li
+		{
+			padding-right: 25px;
+			text-align: right;
+		}
+	}
+
+	#content
+	{
+		float: left;
+		font-size: 14px;
+		width: 570px;
+		padding-bottom: 5px;
+	}
+
+	#copyright
+	{
+		padding: 15px 0 0 180px;
+
+		p
+		{
+			text-align: center;
+
+			&.church
+			{
+				margin: 0 0 10px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1219px)
+{
+	body
+	{
+		margin: 0 10px 40px 10px;
+	}
+
+	#container
+	{
+		margin: 0 auto;
+		width: 960px;
+	}
+
+	#info
+	{
+		padding: 35px 0 10px 220px;
+
+		.church_address,
+		.sunday_services
+		{
+			float: left;
+			font-size: 14px;
+
+			strong
+			{
+				font-size: 12px;
+			}
+
+			&.sunday_services
+			{
+				padding: 0 0 0 15px;
+			}
+		}
+
+		a
+		{
+			position: absolute;
+			right: 0px;
+			bottom: 10px;
+			padding: 10px 15px;
+		}
+	}
+
+	#header
+	{
+		float: left;
+		width: 220px;
+	}
+
+	#logo
+	{
+		margin: 0 0 15px 0;
+		width: 200px;
+	}
+
+	#content
+	{
+		float: left;
+		width: 740px;
+		padding-bottom: 10px;
+	}
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 15px 0 0 220px;
+
+		p.church
+		{
+			float: left;
+		}
+		p.software
+		{
+			float: right;
+		}
+	}
+}
+
+@media only screen and (min-width: 1220px)
+{
+	body
+	{
+		margin: 0 10px 50px 10px;
+	}
+
+	#container
+	{
+		margin: 0 auto;
+		width: 1200px;
+	}
+
+	#info
+	{
+		padding: 50px 0 15px 315px;
+
+		.church_address,
+		.sunday_services
+		{
+			float: left;
+
+			&.sunday_services
+			{
+				padding: 0 0 0 15px;
+			}
+		}
+
+		a
+		{
+			bottom: 15px;
+			position: absolute;
+			right: 0px;
+		}
+	}
+
+	#header
+	{
+		float: left;
+		width: 300px;
+	}
+
+	#logo
+	{
+		margin: 0 20px 25px 10px;
+		width: 270px;
+	}
+
+	#content
+	{
+		float: left;
+		width: 900px;
+		padding-bottom: 10px;
+	}
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 15px 0 0 300px;
+
+		p.church
+		{
+			float: left;
+		}
+		p.software
+		{
+			float: right;
+		}
+	}
+}
