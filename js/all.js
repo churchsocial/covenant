@@ -3,6 +3,11 @@
 
 $(function()
 {
+    // Configure responsive videos
+    $('#wysiwyg').fitVids({
+        customSelector: "iframe[src*='ustream.tv'], iframe[src*='livestream.com']"
+    });
+
     // Automatically line up menu and content columns
     setInterval(function()
     {

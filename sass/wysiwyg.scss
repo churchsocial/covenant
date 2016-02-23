@@ -1,40 +1,33 @@
-#wysiwyg
-{
+#wysiwyg {
     margin: 30px 25px;
 
-    h1
-    {
+    h1 {
         position: relative;
         z-index: 100;
         margin: -30px 0 30px -25px;
         padding: 13px 13px 13px 35px;
         width: 80%;
-
         font-family: 'Din Condensed Medium', Arial, Helvetica, sans-serif;
         color: white;
         font-size: 30px;
         line-height: 100%;
         font-weight: normal;
-
         background: #837167;
         box-shadow: 0px 0px 10px hsla(0, 1%, 0%, 0.3);
 
-        a
-        {
+        a {
             color: white;
             text-decoration: none;
         }
 
-        @media only screen and (max-width: 549px)
-        {
+        @media only screen and (max-width: 549px) {
             font-size: 25px;
             margin: -30px 0 25px -30px;
             padding: 8px 13px 8px 20px;
         }
     }
 
-    h2
-    {
+    h2 {
         margin: 35px 0 5px 0;
         color: white;
         font-family: 'Din Condensed Medium', Arial, Helvetica, sans-serif;
@@ -43,8 +36,7 @@
         font-weight: normal;
     }
 
-    h3
-    {
+    h3 {
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
@@ -53,18 +45,15 @@
         text-transform: uppercase;
     }
 
-    strong
-    {
+    strong {
         color: #c5beb9;
     }
 
-    a
-    {
+    a {
         color: #BC652E;
         text-decoration: none;
 
-        &:hover
-        {
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -80,7 +69,7 @@
     }
 
     .alignright {
-        float:right;
+        float: right;
         margin: 5px 0 20px 20px;
     }
 
@@ -106,7 +95,7 @@
     a img.aligncenter {
         display: block;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
     }
 
     .wp-caption {
