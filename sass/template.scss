@@ -34,7 +34,7 @@ html {
     }
 
     a {
-        background: #837166 url(../img/btn_bg.png) bottom repeat-x;
+        background: #837166;
         border-color: #281910;
         border-radius: 3px;
         border-style: solid;
@@ -45,12 +45,11 @@ html {
         font-weight: bold;
         line-height: 100%;
         padding: 10px 20px;
-        text-shadow: #403128 1px 1px 0;
         text-decoration: none;
         text-transform: uppercase;
 
         &:hover {
-            background: #8d7a6e;
+            background: lighten(#837166, 10%);
         }
     }
 }
@@ -67,61 +66,65 @@ html {
 
 @media only screen and (min-width: 768px) {
     #menu {
-        border-bottom: #352a25 solid 1px;
-        border-top: #1a1410 solid 1px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
+        ul.menu {
+            border-bottom: #352a25 solid 1px;
+            border-top: #1a1410 solid 1px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
 
-        > li {
-            border-bottom: #1a1410 solid 1px;
-            border-top: #352a25 solid 1px;
-            padding: 15px 0;
+            > li {
+                border-bottom: #1a1410 solid 1px;
+                border-top: #352a25 solid 1px;
+                padding: 15px 0;
 
-            &.selected {
-                > a {
-                    text-decoration: underline;
-                }
-            }
-
-            > a {
-                color: #d0c1b8;
-                font-family: 'Din Condensed Medium', 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
-                font-size: 25px;
-                font-weight: normal;
-                line-height: 125%;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        li {
-            ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-
-                li {
-                    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
-                    font-size: 14px;
-                    line-height: 145%;
-
-                    &.selected {
-                        a {
-                            color: #bc652e;
-                        }
+                &.current-menu-item,
+                &.current_page_item {
+                    > a {
+                        text-decoration: underline;
                     }
+                }
 
-                    a {
-                        color: #89776c;
-                        text-decoration: none;
+                > a {
+                    color: #d0c1b8;
+                    font-family: 'Din Condensed Medium', 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif;
+                    font-size: 25px;
+                    font-weight: normal;
+                    line-height: 125%;
+                    text-decoration: none;
 
-                        &:hover {
-                            text-decoration: underline;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            > li {
+                ul.sub-menu {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    > li {
+                        font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+                        font-size: 14px;
+                        line-height: 145%;
+
+                        &.current-menu-item,
+                        &.current_page_item {
+                            a {
+                                color: #bc652e;
+                            }
+                        }
+
+                        a {
+                            color: #89776c;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
@@ -245,6 +248,12 @@ html {
             display: block;
         }
 
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
         li {
             padding: 0 15px 15px 15px;
 
@@ -252,17 +261,13 @@ html {
                 display: block;
                 margin: 0 0 5px 0;
                 padding: 15px 20px;
-                background: #837166 url(../img/btn_bg.png) bottom repeat-x;
-                border-color: #281910;
+                background: #837166;
                 border-radius: 3px;
-                border-style: solid;
-                border-width: 1px;
                 color: white;
                 font-size: 15px;
                 text-transform: uppercase;
                 font-weight: bold;
                 line-height: 100%;
-                text-shadow: #403128 1px 1px 0;
                 text-decoration: none;
                 text-align: center;
 

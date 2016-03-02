@@ -17,7 +17,7 @@
     <div id="info">
         <a class="menu" href="#show-menu">Menu</a>
         <?php if (get_theme_mod('member_login')): ?>
-            <a class="login" href="<?=get_theme_mod('member_login')?>" rel="nofollow">Member Login</a>
+            <a class="login" href="<?=get_theme_mod('member_login')?>">Member Login</a>
         <?php endif ?>
         <?php if (get_theme_mod('church_address')): ?>
             <div class="church_address"><strong>Church Address:</strong> <?=get_theme_mod('church_address')?></div>
@@ -32,13 +32,9 @@
                 <img src="<?=get_theme_mod('header_logo')?>" alt="<?php bloginfo('blogname')?>">
             </a>
         <?php endif ?>
-        <?php wp_nav_menu([
-            'theme_location' => 'main_menu',
-            'depth' => 2,
-            'menu_id' => 'menu',
-            'menu_class' => 'menu',
-            'container' => '',
-        ]) ?>
+        <div id="menu">
+            <?=get_main_menu()?>
+        </div>
     </div>
     <div id="content">
         <div class="banner">

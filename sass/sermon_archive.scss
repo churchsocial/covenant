@@ -1,0 +1,41 @@
+.church_social_sermon_archive {
+    margin: 20px 0;
+
+    &__table {
+        margin: 25px 0;
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: separate;
+    }
+
+    &__table_date_header,
+    &__table_preached_time_header,
+    &__table_title_header,
+    &__table_author_header,
+    &__table_passage_header {
+        text-align: left;
+        padding: 0 5px 10px 5px;
+        font-size: 20px;
+        line-height: 1;
+        color: white;
+        font-family: 'Din Condensed Medium';
+        font-weight: normal;
+    }
+
+    &__table_date,
+    &__table_preached_time,
+    &__table_title,
+    &__table_author,
+    &__table_passage,
+    &__table_no_sermons_found {
+        font-size: 14px;
+        line-height: 120%;
+        padding: 10px 5px;
+        border-top: solid 1px lighten(#382b23, 10%);
+        vertical-align: top;
+    }
+
+    &__table_date {
+        white-space: nowrap;
+    }
+}

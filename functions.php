@@ -36,6 +36,23 @@ if (!isset($content_width)) {
     $content_width = 900;
 }
 
+// Setup main menu
+function get_main_menu()
+{
+    wp_nav_menu([
+        'theme_location' => 'main_menu',
+        'depth' => 2,
+        'container' => '',
+        'fallback_cb' => function () {
+            wp_nav_menu([
+                'depth' => 2,
+                'container' => '',
+                'fallback_cb' => '',
+            ]);
+        },
+    ]);
+}
+
 // Setup custom theme options
 add_action('customize_register', function ($wp_customize) {
 
